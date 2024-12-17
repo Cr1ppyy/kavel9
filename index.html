@@ -1,0 +1,644 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link type="text/css" rel="stylesheet" href="resources/sheet.css">
+<style type="text/css">
+  .ritz .waffle a {
+    color: inherit;
+  }
+
+  .ritz .waffle .s5 {
+    background-color: #ffffff;
+    text-align: right;
+    color: #000000;
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+
+  .ritz .waffle .s8 {
+    background-color: #ffffff;
+    text-align: left;
+    color: #ffffff;
+    font-family: docs-Calibri, Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+
+  .ritz .waffle .s7 {
+    background-color: #ffffff;
+    text-align: left;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+
+  .ritz .waffle .s6 {
+    background-color: #ffffff;
+    text-align: right;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+
+  .ritz .waffle .s2 {
+    background-color: #ffffff;
+    text-align: right;
+    font-weight: bold;
+    color: #ff0000;
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+
+  .ritz .waffle .s3 {
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+
+  .ritz .waffle .s9 {
+    background-color: #ff0000;
+    text-align: right;
+    color: #000000;
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+
+  .ritz .waffle .s4 {
+    background-color: #ffffff;
+    text-align: left;
+    color: #000000;
+    font-family: docs-Calibri, Arial;
+    font-size: 11pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+
+  .ritz .waffle .s1 {
+    background-color: #ffffff;
+    text-align: right;
+    font-weight: bold;
+    color: #000000;
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+
+  .ritz .waffle .s0 {
+    background-color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    color: #000000;
+    font-family: Arial;
+    font-size: 12pt;
+    vertical-align: bottom;
+    white-space: nowrap;
+    direction: ltr;
+    padding: 0px 3px 0px 3px;
+  }
+
+
+  /* Style for login form */
+  .login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+
+  .login-box {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .login-box h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .login-box input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  /* Hide the table container initially */
+  #table-container {
+    display: none;
+  }
+</style>
+<script>
+// Function to handle login
+function login() {
+  var password = document.getElementById("password").value;
+
+  // Replace 'your_password' with your actual password
+  if (password === "pHANKenO") {
+    // Password correct, show the table
+    document.getElementById("login-screen").style.display = "none";
+    document.getElementById("table-container").style.display = "block";
+  } else {
+    alert("Incorrect password. Please try again.");
+  }
+}
+
+// Function to sign out (close the tab)
+function signOut() {
+  window.close();
+}
+</script>
+</head>
+<body>
+<!-- Login Screen -->
+<div id="login-screen" class="login-container">
+  <div class="login-box">
+    <h2>Login</h2>
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="login()">Login</button>
+  </div>
+</div>
+
+<!-- Table Container -->
+<div id="table-container">
+  <div class="ritz grid-container" dir="ltr">
+    <table class="waffle" cellspacing="0" cellpadding="0">
+      <thead>
+        <tr>
+          <th class="row-header freezebar-origin-ltr"></th>
+          <th id="424725494C0" style="width:107px;" class="column-headers-background"></th>
+          <th id="424725494C1" style="width:60px;" class="column-headers-background"></th>
+          <th id="424725494C2" style="width:31px;" class="column-headers-background"></th>
+          <th id="424725494C3" style="width:60px;" class="column-headers-background"></th>
+          <th id="424725494C4" style="width:60px;" class="column-headers-background"></th>
+          <th id="424725494C5" style="width:31px;" class="column-headers-background"></th>
+          <th id="424725494C6" style="width:60px;" class="column-headers-background"></th>
+          <th id="424725494C7" style="width:60px;" class="column-headers-background"></th>
+          <th id="424725494C8" style="width:31px;" class="column-headers-background"></th>
+          <th id="424725494C9" style="width:60px;" class="column-headers-background"></th>
+          <th id="424725494C10" style="width:66px;" class="column-headers-background"></th>
+          <th id="424725494C11" style="width:31px;" class="column-headers-background"></th>
+          <th id="424725494C12" style="width:60px;" class="column-headers-background"></th>
+          <th id="424725494C13" style="width:60px;" class="column-headers-background"></th>
+          <th id="424725494C14" style="width:60px;" class="column-headers-background"></th>
+          <th id="424725494C15" style="width:65px;" class="column-headers-background"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="height: 19px">
+          <th id="424725494R0" style="height: 19px;" class="row-headers-background">
+            <div class="row-header-wrapper" style="line-height: 19px"></div>
+       </th>
+        <td class="s0">KAVEL 9</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R1" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">2</div>
+        </th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R2" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">3</div>
+        </th>
+        <td class="s1">2020</td>
+        <td class="s2">750.00</td>
+        <td class="s3"></td>
+        <td class="s1">2021</td>
+        <td class="s2">900.00</td>
+        <td class="s4"></td>
+        <td class="s1">2022</td>
+        <td class="s2">900.00</td>
+        <td class="s4"></td>
+        <td class="s1">2023</td>
+        <td class="s2">900.00</td>
+        <td class="s4"></td>
+        <td class="s1">2024</td>
+        <td class="s2" dir="ltr">825.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R3" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">4</div>
+        </th>
+        <td class="s3" dir="ltr">JAN</td>
+        <td class="s5">0.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R4" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">5</div>
+        </th>
+        <td class="s3" dir="ltr">FEB</td>
+        <td class="s5">0.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R5" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">6</div>
+        </th>
+        <td class="s3" dir="ltr">MRT</td>
+        <td class="s5">0.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">225.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">300.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R6" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">7</div>
+        </th>
+        <td class="s3" dir="ltr">APR</td>
+        <td class="s5">75.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">75.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R7" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">8</div>
+        </th>
+        <td class="s3" dir="ltr">MEI</td>
+        <td class="s5">0.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R8" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">9</div>
+        </th>
+        <td class="s3" dir="ltr">JUNI</td>
+        <td class="s5">75.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">75.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">300.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R9" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">10</div>
+        </th>
+        <td class="s3" dir="ltr">JULI</td>
+        <td class="s5">75.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">75.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">75.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5" dir="ltr">75.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R10" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">11</div>
+        </th>
+        <td class="s3" dir="ltr">AUG</td>
+        <td class="s5">0.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R11" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">12</div>
+        </th>
+        <td class="s3" dir="ltr">SEP</td>
+        <td class="s5">150.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5" dir="ltr">150.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R12" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">13</div>
+        </th>
+        <td class="s3" dir="ltr">OKT</td>
+        <td class="s5">0.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">150.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5" dir="ltr">75.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R13" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">14</div>
+        </th>
+        <td class="s3" dir="ltr">NOV</td>
+        <td class="s5">0.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R14" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">15</div>
+        </th>
+        <td class="s3" dir="ltr">DEC</td>
+        <td class="s5">225.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td class="s4"></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R15" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">16</div>
+        </th>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R16" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">17</div>
+        </th>
+        <td class="s3" dir="ltr">TOTAAL</td>
+        <td class="s5">600.00</td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s5">450.00</td>
+        <td></td>
+        <td class="s3"></td>
+        <td class="s5">0.00</td>
+        <td></td>
+        <td class="s3"></td>
+        <td class="s5">825.00</td>
+        <td></td>
+        <td class="s3"></td>
+        <td class="s5">300.00</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R17" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">18</div>
+        </th>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td></td>
+        <td class="s3"></td>
+        <td class="s3"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr style="height: 19px">
+        <th id="161645262R18" style="height: 19px;" class="row-headers-background">
+          <div class="row-header-wrapper" style="line-height: 19px">19</div>
+        </th>
+        <td class="s3">nog te betalen</td>
+        <td class="s6">150.00</td>
+        <td class="s7"></td>
+        <td class="s7"></td>
+        <td class="s6">450.00</td>
+        <td class="s8"></td>
+        <td class="s7"></td>
+        <td class="s6">900.00</td>
+        <td class="s8"></td>
+        <td class="s7"></td>
+        <td class="s6">75.00</td>
+        <td class="s8"></td>
+        <td class="s7"></td>
+        <td class="s6">525.00</td>
+        <td></td>
+        <td class="s9">2100.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- Sign Out Button -->
+<div style="text-align: center; margin-top: 20px;">
+  <button onclick="signOut()">Sign Out and Close Tab</button>
+</div>
+
+</body>
+  </html>
